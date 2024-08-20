@@ -18,7 +18,7 @@ Install Firebase CLI by running npm install -g firebase-tools.
 # Clone the Repository
 Start by cloning the repository:
 
-git clone https://github.com/yourusername/ChatRoomApp.git
+git clone https://github.com/username/ChatRoomApp.git
 
 Navigate into the project directory:
 
@@ -32,11 +32,11 @@ npm install
 # Firebase Configuration
 # 1.Initialize Firebase
 
-Run firebase init to set up Firebase in your project. Follow the prompts to configure Firebase Hosting, Authentication, and Database.
+Run 'firebase init' to set up Firebase in project. Follow the prompts to configure Firebase Hosting, Authentication, and Database.
 
 # 2.Create firebase.json
 
-Ensure you have a firebase.json file in your project root with the following content:
+Ensure to have a firebase.json file in project root with the following content:
 
 {
   "hosting": {
@@ -51,21 +51,21 @@ Ensure you have a firebase.json file in your project root with the following con
 
 # 3.Update Environment Configuration
 
-Update your app with the Firebase configuration from the Firebase Console, including API keys and project details.
+Update app with the Firebase configuration from the Firebase Console, including API keys and project details.
 
 # Deployment
-Deploy your application to Firebase Hosting with:
+Deploy application to Firebase Hosting with:
 
 firebase deploy
 
-Your application will be live at https://fir-chatroom-4841e.web.app upon successful deployment.
+Application will be live at: https://fir-chatroom-4841e.web.app upon successful deployment.
 
 # Usage
 # 1.Run Locally
 
 To test the app locally, use: firebase serve
 
-Access your app at http://localhost:5000 in your browser.
+Access your app at: http://localhost:5000 in your browser.
 
 # 2.Navigate the App
 
