@@ -1,0 +1,14 @@
+{
+  "name": "my-web-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "description": "A simple Node.js web application",
+  "author": "Akash Deep Ganguly",
+  "license": "ISC"
+}
