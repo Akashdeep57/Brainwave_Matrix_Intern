@@ -1,0 +1,36 @@
+name: Firebase Hosting
+
+on:
+  push:
+    paths:
+      - 'ChatRoomApp/**'
+  pull_request:
+    paths:
+      - 'ChatRoomApp/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.16.0' # Specify your Node.js version
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: ./ChatRoomApp
+
+      - name: Build
+        run: npm run build
+        working-directory: ./ChatRoomApp
+
+      - name: Deploy to Firebase Hosting
+        uses: wzieba/firebase-action@v2
+        with:
+          args: deploy --only hosting
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
